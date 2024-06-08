@@ -1,3 +1,3 @@
 [build]
-    fuctions = "functions"
+    fucntions = "functions"
     node_builder = "esbuild"
