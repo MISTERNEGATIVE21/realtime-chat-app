@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suman's Chat App</title>
+    <link rel="stylesheet" href="/latestStyle.css">
+    <link rel="icon" type="image/png" href="/chatLogo1.png">
+</head>
+
+<body>
+    <section class="chatsection">
+        <div class="logo">
+            <img height=70 src="/chatLogo1.png" alt="">
+            <div class="title-container">
+                <h1 id="pageTitle">Suman's Chat App    </h1>
+                <b><span id="userCount" class="user-count"></span></b> 
+            </div>
+        </div>
+        
+        <div class="messagearea">
+            <div class="disclaimer">
+                <p><b>Disclaimer:</b>
+                    This chat application is publicly open, and anyone can join and leave the chat at any time. Please note
+                    that no security features have been implemented in this application. It is solely created for learning
+                    purposes and does not provide any privacy or protection of user data. By participating in this chat, you
+                    acknowledge and accept that messages exchanged within this platform may be visible to other
+                    participants. We advise refraining from sharing sensitive or personal information in this chat. Thank
+                    you for your understanding. <b><a href="/about">About</a></b></p>
+            </div>
+        </div>
+        <div class="send">
+            <form action="#" id="send-container">
+                <input type="text" name="messageInput" id="messageInput" placeholder="Type your message here" required>
+                <button class="btn" type="submit">Send</button>
+            </form>
+            <!-- <textarea name="" id="" cols="30" rows="10" placeholder="Write your message..."></textarea> -->
+        </div>
+    </section>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="/client.js"></script>
+</body>
+
+</html>
