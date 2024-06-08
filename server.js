@@ -1,5 +1,7 @@
 const express = require('express')
 const app = express()
+const router = express.Router();
+const serverless = require("serverless-http")
 const http = require('http').createServer(app)
 const sio = require('socket.io')(http)
 const users= {}
@@ -41,3 +43,6 @@ sio.on('connection', socket =>{
         }
     });
 })
+
+// app.use('/.netlify/functions/app', router)
+// module.exports.handler = serverless(app);
