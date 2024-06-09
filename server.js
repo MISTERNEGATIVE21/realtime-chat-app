@@ -44,5 +44,5 @@ sio.on('connection', socket =>{
     });
 })
 
-// app.use('/.netlify/functions/app', router)
-// module.exports.handler = serverless(app);
+app.use('/.netlify/functions/app', router)
+module.exports.handler = serverless(app);
