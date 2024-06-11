@@ -1,4 +1,5 @@
-const socket = io('http://localhost:5000/') 
+// const socket = io('http://localhost:5000/') 
+const socket = io('https://sumanschatapp.vercel.app')
 const textarea = document.querySelector('#textarea')
 const messageArea = document.querySelector('.messagearea')
 const form = document.getElementById('send-container')
