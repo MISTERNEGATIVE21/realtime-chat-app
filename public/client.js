@@ -2,7 +2,7 @@
 // const socket = io('https://sumanschatapp.vercel.app')
 
 const socket = io({
-    transports: ['websocket'],
+    transports: ['https'],
     secure: true,
     path: '/'
   });
