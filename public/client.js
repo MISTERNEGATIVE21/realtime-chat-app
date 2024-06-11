@@ -1,11 +1,12 @@
 // const socket = io('http://localhost:5000/') 
+const socket = io('https://realtime-chat-app-tau-green.vercel.app:5000/')
 // const socket = io('https://sumanschatapp.vercel.app')
 
-const socket = io({
-    transports: ['https'],
-    secure: true,
-    path: '/'
-  });
+// const socket = io({
+//     transports: ['http'],
+//     secure: true,
+//     path: '/'
+//   });
 
 const textarea = document.querySelector('#textarea')
 const messageArea = document.querySelector('.messagearea')
