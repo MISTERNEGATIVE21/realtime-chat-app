@@ -1,5 +1,5 @@
 // const socket = io('http://localhost:5000/') 
-const socket = io('https://realtime-chat-app-tau-green.vercel.app:5000/')
+const socket = io('https://realtime-chat-app-tau-green.vercel.app')
 // const socket = io('https://sumanschatapp.vercel.app')
 
 // const socket = io({
