@@ -4,12 +4,21 @@ const http = require('http').createServer(app)
 const io = require('socket.io')
 const users= {}
 
-const sio = io(http,{
+const sio = io(http, {
     cors: {
-        origin: "*",
-        mecthods: ["GET", "POST"]
+      origin: '*',
+      methods: ['GET', 'POST'],
+      allowedHeaders: ['Content-Type'],
+      credentials: true
     }
-});
+  });
+
+// const sio = io(http,{
+//     cors: {
+//         origin: "*",
+//         mecthods: ["GET", "POST"]
+//     }
+// });
 
 const PORT = process.env.PORT || 5000
 

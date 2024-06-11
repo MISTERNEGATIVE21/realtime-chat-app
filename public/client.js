@@ -3,9 +3,10 @@
 
 const socket = io({
     transports: ['websocket'],
+    secure: true,
     path: '/socket.io'
   });
-  
+
 const textarea = document.querySelector('#textarea')
 const messageArea = document.querySelector('.messagearea')
 const form = document.getElementById('send-container')
