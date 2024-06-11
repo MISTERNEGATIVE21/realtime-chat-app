@@ -4,7 +4,7 @@
 const socket = io({
     transports: ['websocket'],
     secure: true,
-    path: '/socket.io'
+    path: '/'
   });
 
 const textarea = document.querySelector('#textarea')
