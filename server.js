@@ -1,17 +1,17 @@
 const express = require('express')
 const app = express()
 const http = require('http').createServer(app)
-const io = require('socket.io')
+const sio = require('socket.io')(http)
 const users= {}
 
-const sio = io(http, {
-    cors: {
-      origin: '*',
-      methods: ['GET', 'POST'],
-      allowedHeaders: ['Content-Type'],
-      credentials: true
-    }
-  });
+// const sio = io(http, {
+//     cors: {
+//       origin: '*',
+//       methods: ['GET', 'POST'],
+//       allowedHeaders: ['Content-Type'],
+//       credentials: true
+//     }
+//   });
 
 // const sio = io(http,{
 //     cors: {
