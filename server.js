@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const http = require('http').createServer(app)
 const sio = require('socket.io')(http)
+const cors = require('cors')
 const users= {}
 
 // const sio = io(http, {
@@ -27,6 +28,7 @@ http.listen(PORT, ()=>{
 })
 
 app.use(express.static(__dirname + '/public'))
+app.use(cors());
 
 app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/index.html')
