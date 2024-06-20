@@ -2,7 +2,10 @@
 //const socket = io('http://192.168.1.106:5000') 
 //const socket = io('https://realtime-chat-app-tau-green.vercel.app')
 // const socket = io('https://sumanschatapp.vercel.app')
-const socket = io.connect();
+//const socket = io.connect();
+const socket = io.connect('https://sumanschat.vercel.app', {
+    transports: ['websocket', 'polling']
+  });
 
 // const socket = io({
 //     transports: ['http'],
